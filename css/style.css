@@ -1,0 +1,1217 @@
+*{
+    /*RESET*/
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    
+
+    /*PADRONIZAÇÃO*/
+/*    font-family: cursive;*/
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+select{
+    width:inherit;
+    height: 40px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    border: solid 2px black;
+}
+
+select:hover{
+    cursor: pointer;
+}
+
+option{
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+option:hover{
+    cursor: pointer;
+}
+
+.titulo{
+    display: none;
+}
+ul{
+    list-style: none;
+}
+
+body{
+    font-family: Helvetica, Arial, Sans-Serif;
+
+    background-image: url(../img/wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+/*    background-color: greenyellow;*/
+}
+
+.conteudo{
+    width: 1500px;
+    height: inherit;
+    background-color: #ffffff;
+
+}
+
+.center{
+    /*Centralizar*/
+   margin-left: auto;
+   margin-right: auto;
+}
+
+
+/* área do cabeçalho */
+
+
+
+
+#cabecalho{
+    width: 100%;
+    height: 80px;
+    background-color: #e3785d;
+    position: fixed; 
+    z-index: 9;
+    margin-bottom: 20px;
+    
+}
+
+#cabecalho .conteudo{
+    background-color: #e3785d;
+}
+
+
+/*Área do Logo*/
+
+#caixa_logo{
+    width: 220px;
+    height: inherit;
+    /* background-color: brown; */
+    padding-top: 7px;
+    box-sizing: border-box;
+    float: left;
+    margin-right: 20px;
+}
+
+#logo{
+    width: inherit;
+    height: 65px;
+/*    background-color: white;*/
+    background-image: url(https://fontmeme.com/permalink/190923/bdc2510ca3ee40d0af99ba633c831974.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#logo:hover{
+    cursor: pointer;
+}
+
+/*Área do Menu*/
+
+#caixa_menu{
+    width: 750px;
+    height: inherit;
+/*     background-color: beige; */
+    float: left;
+    padding-top: 35px;
+    box-sizing: border-box;
+    margin-right: 10px;
+}
+
+#container_menu{
+    width: inherit;
+    height: 40px;
+/*    background-color: pink;*/
+}
+
+.menu{
+    width: 120px;
+    height: 35px;
+/*    background-color: #ff9500;*/
+    color: #edbf9f;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: Helvetica, Arial, Sans-Serif;
+    margin-right: 5px;
+    float: left;
+    text-align: center;
+    padding-top: 5px;
+    box-sizing: border-box;
+    border-radius: 8px;
+/*    font-weight: bold;*/
+}
+
+.menu:hover{
+    cursor: pointer;
+    color: white;
+    box-sizing: border-box;
+/*    border: solid 1px black;*/
+/*    background-color: #a273ba;*/
+}
+
+/*Área do Login*/
+
+#container_login{
+    width: 500px;
+    height: inherit;
+/*     background-color: bisque; */
+    float: left;
+}
+
+.caixa_login{
+    width: 220px;
+    height: inherit;
+/*     background-color: cadetblue; */
+    color: #edbf9f;
+    font-family: Helvetica, Arial, Sans-Serif;
+    font-size: 20px;
+    float: left;
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+#senha_button{
+    width: 270px;
+}
+
+#usuario{
+    width: inherit;
+    height: 30px;
+    margin-top: 10px;
+    background-color: #eee6f2;
+    border: solid 2px black;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+#usuario:hover{
+    border: solid 2px #edbf9f;
+}
+
+#senha{
+    width: 220px;
+    height: 30px;
+    margin-top: 10px;
+    background-color: #eee6f2;
+    border: solid 2px black;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+#senha:hover{
+    border: solid 2px #edbf9f;
+}
+
+#botao_ok{
+    width: 40px;
+    height: 30px;
+    background-color: #eee6f2;
+/*    background-color: rgba(0,0,0,0.0);*/
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+    border: solid 2px black;
+    box-sizing: border-box;
+}
+
+#botao_ok:hover{
+    border: solid 2px #edbf9f;
+    cursor: pointer;
+}
+
+/*Área do slide*/
+
+#secao_slide{
+    width: 100%;
+    height: 500px;
+    padding-top: 90px;
+/*    background-color: white;*/
+    margin-bottom: 100px;
+}
+
+
+
+
+.slider {
+	width: inherit;
+    margin: 2em auto;
+    margin-top: 0px;
+    
+}
+
+.slider-wrapper {
+	width: 100%;
+	height: 400px;
+	position: relative;
+    
+}
+
+.slide {
+	float: left;
+    position: absolute;
+    background-size: cover;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: opacity 3s linear;
+    
+}
+
+.slider-wrapper > .slide:first-child {
+	opacity: 1;
+}
+
+#borda_slide{
+    border-radius: 35px;
+	border: solid 2px black;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+
+
+
+/*Área do conteudo*/
+
+#secao_conteudo{
+    width: 100%;
+    min-height: 700px;
+    height: auto;
+/*    background-color: aquamarine;*/
+    display: table;
+}
+
+.imagens{
+    width: 60%;
+    height: 100%;
+    border-radius: 0px;
+    border: 0px;
+    margin-left: 25px;
+    
+}
+
+img{
+    border-radius: 35px;
+	border: solid 2px black;
+    box-sizing: border-box;
+/*    background-color: white;*/
+}
+
+#redes_sociais{
+    width: 120px;
+    height: 340px;
+    margin-top: 500px;
+    margin-left: 1510px;
+/*    background-color: pink;*/
+    float: left;
+    position: fixed;
+/*    position: absolute;*/
+}
+
+.img_redes{
+    width: inherit;
+    height: 70px;
+/*    background-color: darkcyan;*/
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+.img_redes:hover{
+    cursor: pointer;
+}
+
+#secao_conteudo .conteudo{
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 15px;
+}
+
+#container_home{
+    width: inherit;
+    min-height: 700px;
+    height: auto;
+    display: table;
+/*    background-color: black;*/
+    border-radius: 15px;
+}
+
+#menu_categorias{
+    width: 200px;
+    min-height: 700px;
+    height: auto;
+/*    background-color: #faf5fc;*/
+/*    background-color: rgba(0,0,0,0.5);*/
+
+    border-radius: 15px;
+    float: left;
+    display: table;
+}
+
+#caixa_categorias{
+    width: inherit;
+    min-height: 40px;
+    height: auto;
+/*    background-color: thistle;*/
+}
+
+.categorias_itens{
+    width: inherit;
+    height: 40px;
+    background-color: firebrick;
+    border: dotted 4px black;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 10px;
+    padding-top: 6px;
+    box-sizing: border-box;
+}
+
+.categorias_itens:hover{
+    cursor: pointer;
+    color: #d90b00;
+    background-color: #ff957a;
+}
+
+#caixa_produtos{
+    width: 1300px;
+    min-height: 700px;
+    height: inherit;
+/*    background-color: #faf5fc;  */
+/*    background-color: rgba(0,0,0,0.5);*/
+
+    border-radius: 15px;
+    padding-left: 70px;
+    float: left;
+    padding-top: 60px;
+    box-sizing: border-box;
+}
+
+.produtos_1{
+    width: 300px;
+    height: 260px;
+    background-color: white;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    box-sizing: border-box;
+    float: left;
+    border: solid 2px black;
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px black;
+}
+
+.produtos_1:hover{
+    border: solid 2px #d90b00;
+    cursor: pointer;
+    transform: scale(1.15);
+}
+
+.imagens_home{
+    border-radius: 20px;
+    border: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.img_produtos{
+    width: 115px;
+    height: 100px;
+/*    background-color: aquamarine;*/
+/*    background-image: url(../img/sucoMaracuja.jpg);*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 5px;
+    margin-left: 90px;
+    
+}
+
+.nome_descricao_preco_detalhes{
+    width: 290px;
+    height: 30px;
+/*    background-color: cornsilk;*/
+    margin-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.detalhes:hover{
+    cursor: pointer;
+    color: #d90b00;
+}
+
+
+
+
+
+/*CURIOSIDADES*/
+
+#section_curiosidades{
+
+    width: 100%;
+    min-height: 500px;
+    height: auto;
+/*    background-color: indianred;*/
+/*    background-image: url(../img/wallpaper.jpg);*/
+    padding-top: 80px;
+    box-sizing: border-box;
+    display: table;
+    
+}
+
+#section_curiosidades .conteudo{
+    background-color: rgba(0,0,0,0.5);
+
+}
+
+#curiosidades{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+    min-height: inherit;
+    height: auto;
+    
+}
+
+#titulo_curiosidades{
+    width: 70%;
+    height: 60px;
+/*    background-color: beige;*/
+    padding-top: 10px;
+    box-sizing: border-box;
+    margin-bottom: 100px;
+}
+
+.titulo_img_texto{
+    width: 90%;
+    height: 600px;
+    background-color: rgba(0,0,0,0.5);
+/*    background-color: rgba(0,0,0,0.1);*/
+    padding-top: 30px;
+    padding-left: 30px;
+    box-sizing: border-box;
+    border-bottom: solid 2px black;
+    border-radius: 20px;
+}
+
+h2{
+    margin-bottom: 30px;
+    margin-left: 230px;
+    color: white;
+}
+
+.right{
+    margin-bottom: 30px;
+    margin-left: 1030px;
+}
+
+.imagem_curiosidades{
+    border-radius: 24px;
+    border: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.img_curiosidades{
+    width: 500px;
+    height:350px;
+/*    background-color: brown;*/
+    float: left;
+    margin-right: 40px;
+    margin-left: 40px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 24px;
+    border: solid 1px black;
+}
+
+.texto_curiosidades{
+    width: 700px;
+    height: 350px;
+/*    background-color: pink;*/
+    float: left;
+}
+
+.texto_curiosidades p{
+    font-size: 20px;
+    color: white;
+}
+
+/*SEÇÃO SOBRE NÓS*/
+
+#section_sobrenos{
+    
+    width: 100%;
+    min-height: 550px;
+    height: auto;
+/*    background-color: beige;*/
+    padding-top: 80px;
+    display: table;
+    
+}
+
+#sobre_nos{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: rgba(0,0,0,0.7);
+    box-sizing: border-box;
+    min-height: inherit;
+    height: auto;
+    border-bottom: solid 2px white;
+}
+
+#texto_sobrenos{
+    width: 800px;
+    height: 180px;
+/*    background-color: burlywood;*/
+    text-align: center;
+}
+
+#texto_sobrenos p{
+    font-size: 25px;
+    color: white;
+    
+}
+#sobrenos_info{
+    width: 100%;
+    min-height: 600px;
+    height: auto;
+/*    background-color: cornflowerblue;*/
+}
+
+#sobrenos_info .conteudo{
+    min-height: 600px;
+    height: auto;
+    display: table;
+}
+
+.caixas_sobrenos{
+    width: 350px;
+    height: 400px;
+/*    background-color: tomato;*/
+/*    float: left;*/
+/*    margin-left: 30px;*/
+/*    margin-top: 180px;*/
+    margin-bottom: 50px;
+}
+
+.imagem_sobre{
+    border-radius: 0px;
+    border: 0px;
+    width: 90%;
+    height: 100%;
+}
+
+.img_sobrenos{
+    width: 200px;
+    height: 150px;
+/*    background-color: aquamarine;*/
+    margin-left: 80px;
+    margin-bottom: 25px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.descricao_sobrenos{
+    width: 220px;
+    height: 50px;
+/*    background-color: aliceblue;*/
+    margin-bottom: 5px;
+    border-bottom: solid 1px black;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+}
+
+.descricao_sobrenos h1{
+    width: 220px;
+    height: 50px;
+/*    background-color: aliceblue;*/
+    margin-bottom: 5px;
+    border-bottom: solid 1px black;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.detalhe_sobrenos{
+    width: 220px;
+    height: 50px;
+/*    background-color: bisque;*/
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+
+
+/*SEÇÃO PROMOÇÕES*/
+
+#section_promocoes{
+    width: 100%;
+    min-height: 700px;
+    height: auto;
+/*    background-color: darkorange;*/
+    padding-top: 80px;
+    display: table;
+}
+
+#section_promocoes .conteudo{
+    background-color: rgba(0,0,0,0.0);
+}
+
+#titulo_promocoes{
+    width: 500px;
+    height: 50px;
+/*    background-color: beige;*/
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 20px;
+    padding-top: 15px;
+    padding-left: 7px;
+    margin-bottom: 50px;
+}
+
+#categorias_promocoes{
+    width: inherit;
+    min-height: 600px;
+    height: inherit;
+    display: table;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 20px;
+/*    background-color: lightcoral;*/
+}
+
+#produtos_promocoes{
+    
+    width: 1300px;
+    min-height: inherit;
+    height: auto;
+/*    background-color: #faf5fc;*/
+    border-radius: 15px;
+    float: left;
+    padding-top: 50px;
+    padding-left: 60px;
+    box-sizing: border-box;
+    
+}
+
+.promocoes_produtos{
+    width: 300px;
+    height: 530px;
+    background-color: white;
+    float: left;
+    margin-left:20px; 
+    margin-bottom: 30px;
+    padding-top: 20px;
+    border: solid 2px black;
+    box-shadow: 10px 10px 20px black;
+    border-radius: 30px;
+}
+
+.promocoes_produtos:hover{
+    border: solid 2px #d90b00;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.img_promocoes{
+    width: 60%;
+    height: 160px;
+/*    background-color: antiquewhite;*/
+    margin-bottom: 15px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.imagem_promo{
+    border-radius: 20px;
+    border: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.nome_promocoes{
+    width: 200px;
+    height: 40px;
+/*    background-color: beige;*/
+    margin-bottom: 15px;
+    padding-top: 5px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.descricao_promocoes{
+    width: 200px;
+    height: 50px;
+/*    background-color: burlywood;*/
+    margin-bottom: 45px;
+}
+
+.preco_antigo{
+    width: 100px;
+    height: 30px;
+/*    background-color: cadetblue;*/
+    text-decoration: line-through;
+    margin-bottom: 25px;
+    margin-left: 15px;
+    font-size: 20px;
+    font-weight: bold;
+        color: gray;
+
+}
+
+.preco_atual{
+    width: 170px;
+    height: 60px;
+/*    background-color: azure;*/
+    margin-bottom: 35px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #d90b00;
+}
+
+.detalhes_promocoes{
+    width: 100px;
+    height: 30px;
+/*    background-color: cadetblue;*/
+    margin-bottom: 5px;
+    margin-left: 180px;
+    font-size: 17px;
+}
+
+.detalhes_promocoes:hover{
+    cursor: pointer;
+    color: #d90b00;
+}
+
+
+
+
+/*SEÇÃO NOSSAS LOJAS*/
+
+#section_nossaslojas{
+    width: 100%;
+    min-height: 850px;
+    height: auto;
+/*    background-color: aquamarine;*/
+    padding-top: 80px;
+    display: table;
+}
+
+#section_nossaslojas .conteudo{
+    background-color: rgba(0,0,0,0.5);
+
+}
+
+#titulo_lojas{
+    font-size: 30px;
+    color: white;
+    text-decoration: underline;
+    margin-bottom: 100px;
+}
+
+.container_lojas{
+    width: 90%;
+    height: 500px;
+    background-color: beige;
+    padding: 40px;
+    border-radius: 20px;
+    border: solid 2px black;
+    box-shadow: 10px 10px 20px black;
+    margin-bottom: 50px;
+}
+
+.img_lojas{
+    width: 450px;
+    height: 400px;
+    background-color: brown;
+    margin-right: 40px;
+    float: left;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    border: solid 2px black; 
+}
+
+.imagem_loja{
+    border-radius: 20px;
+    border: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.container_descricao{
+    width: 700px;
+    height: 400px;
+/*    background-color: burlywood;*/
+    float: left;
+    border-radius: 20px;
+    border: solid 2px black; 
+}
+
+.container_endereco_etc{
+    width: inherit;
+    height: 300px;
+/*    background-color: cadetblue;*/
+    margin-top: 30px;
+}
+
+.endereco_telefone{
+    width: 50%;
+    height: inherit;
+/*    background-color: aquamarine;*/
+    float: left;
+    padding: 20px;
+    border-right: solid 1px black;
+}
+
+.hr_funcionamento{
+    width: 50%;
+    height: inherit;
+/*    background-color: pink;*/
+    float: left;
+    padding: 20px;
+    border-left: solid 1px black;
+
+}
+
+
+
+.caixa_aviso{
+    width: 100%;
+    height: 80px;
+/*    background-color: darkcyan;*/
+}
+
+.img_aviso{
+    width: 130px;
+    height: inherit;
+/*    background-color: aquamarine;*/
+    float: left;
+    margin-right: 0px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.img_shop{
+    border-radius: 0px;
+    border: 0px;
+    width: 80%;
+    height: 100%;
+}
+
+.txt_aviso{
+    width: 150px;
+    height: inherit;
+/*    background-color: forestgreen;*/
+    float: left;
+    text-align: center;
+    padding-top: 20px;
+/*    padding: 10px;*/
+    font-size: 17px;
+    font-weight: bold;
+}
+
+/*SEÇÃO PRODUTOS DO MÊS*/
+
+#section_produtosdomes{
+    width: 100%;
+    min-height: 700px;
+    height: auto;
+/*    background-color: yellow;*/
+    padding-top: 80px;
+    display: table;
+}
+
+#section_produtodomes .conteudo{
+    background-color: rgba(0,0,0,0.2);
+}
+
+#titulo_mes{
+    width: 450px;
+    height: 50px;
+/*    background-color: beige;*/
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 20px;
+    padding-top: 15px;
+    padding-left: 25px;
+    margin-bottom: 50px;
+}
+
+.container_produtos_mes{
+    width: 460px;
+    height: 300px;
+    background-color: white;
+    border-radius: 10px;
+    border: solid 2px black;
+    box-shadow: 10px 10px 20px black;
+    box-sizing: border-box;
+    float: left;
+    margin-left: 36px;
+    margin-bottom: 30px;
+}
+
+.container_produtos_mes:hover{
+    border: solid 2px #d90b00;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.img_mes{
+    width: 200px;
+    height: 200px;
+/*    background-color: burlywood;*/
+    float: left;
+    background-position: center;
+    border: solid 2px black;
+    border-radius: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+
+}
+
+.imagem_mes{
+    border-radius: 10px;
+    border: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.nome_descricao_mes{
+    float: left;
+    width: 250px;
+    height: 200px;
+/*    background-color: coral;*/
+}
+
+.nome_mes{
+    width: 170px;
+    height: 70px;
+/*    background-color: antiquewhite;*/
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    font-size: 20px;
+/*    float: left;*/
+}
+
+.descricao_mes{
+    width: 150px;
+    height: 120px;
+/*    background-color: cadetblue;*/
+    text-align: center;
+}
+
+.preco_mes{
+    width: inherit;
+    height: 70px;
+/*    background-color: aquamarine;*/
+    clear: both;
+    font-weight: bold;
+    margin-top: 30px;
+    font-size: 25px;
+    color: #d90b00;
+    text-align: center;
+    padding-top: 5px;
+    box-sizing: border-box;
+}
+
+
+
+/*SEÇÃO ENTRE EM CONTATO*/
+
+#section_contato{
+    width: 100%;
+    height: 2100px;
+/*    background-color: orangered;*/
+    padding-top: 80px;
+}
+
+#section_contato .conteudo{
+    background-color: rgba(0,0,0,0.5);
+}
+
+#container_form{
+    width: 700px;
+    height: 1750px;
+    background-color: #edbf9f;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px black;
+}
+
+#formcontato{
+    width: inherit;
+    height: inherit;
+    padding-top: 70px;
+/*    background-color: pink;*/
+}
+
+.form_box{
+    width: 350px;
+    height: 100px;
+/*    background-color: palevioletred;*/
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.input_txt{
+    width: inherit;
+    height: 40px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: solid 2px black;
+}
+
+
+.input_rdo{
+    width: 25px;
+    height: 25px;
+    margin-top: 20px;
+    margin-right: 10px;
+    float: left;
+}
+
+textarea{
+    
+    width: inherit;
+    height: 145px;
+    border-radius: 10px;
+    resize: none;
+    margin-top: 20px;
+    border: solid 2px black;
+
+}
+
+#botao_enviar{
+    width: 150px;
+    height: 60px;
+/*    background-color: pink;*/
+    margin-left: 400px;
+    margin-top: 60px;
+    border-radius: 20px;
+}
+
+
+#input_btn{
+    width: inherit;
+    height: inherit;
+    font-size: 20px;
+    border-radius: 20px;
+    border: solid 2px black;
+    font-weight: bold;
+}
+
+#input_btn{
+    cursor: pointer;
+}
+
+
+
+/*ÁREA DO RODAPÉ*/
+#secao_rodape{
+    width: 100%;
+    height: 200px;
+/*    background-color: #ff957a;*/
+}
+
+#secao_rodape .conteudo{
+/*    background-color: #f7e6e1;*/
+     background-color: #e3785d;
+    border-top: solid 2px black;    
+    border-radius: 10px;
+}
+
+#botao_sistema_interno{
+    width: 180px;
+    height: 70px;
+    font-size: 50px;
+/*    background-color: burlywood;*/
+    margin-top: 60px;
+    margin-left: 70px;
+    margin-right: 290px;
+    float: left;
+}
+
+#botao_sistema_interno:hover{
+    cursor: pointer;
+}
+
+#endereco{
+    width: 390px;
+    height: 30px;
+/*    background-color: aquamarine;*/
+    margin-top: 150px;
+    color: white;
+    margin-right: 280px;
+    float: left;
+    padding-top: 5px;
+    box-sizing: border-box;
+}
+
+#img_app{
+    width: 80px;
+    height: 90px;
+/*    background-color: chocolate;*/
+    background-image: url(../img/mobile.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-top: 90px;
+    margin-right: 10px;
+    float: left;
+}
+
+#img_app:hover{
+/*    background-image: url(../img/appRosa.png);*/
+    cursor: pointer;
+}
+
+#botao_baixe_app{
+    width: 180px;
+    height: 70px;
+/*    background-color: burlywood;*/
+    margin-top: 100px;
+    float: left;
+}
+
+.btn{
+    border-radius: 15px;
+    border: dashed 4px black;
+    box-sizing: border-box;
+/*    background-color: lavender;*/
+    background-color: firebrick;
+    color: white;
+/*    color: #d90b00;*/
+}
+
+.btn:hover{
+/*    border: dashed 2px #c19dd4;*/
+    cursor: pointer;
+    color: #d90b00;
+    background-color: #ff957a;
+}
